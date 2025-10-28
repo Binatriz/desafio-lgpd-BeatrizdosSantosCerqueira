@@ -29,12 +29,17 @@ function Post(form) {
             return false;
 }
 
-//function Enviar() {
-//
-//    var nome = document.getElementById("nomeid");
-//
-//    if (nome.value != "") {
-//        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-//    }
-//
-//}
+
+
+function Bloquear (check) {
+
+    const btnLGPD = document.getElementById("btnLGPD");
+
+    if (check.checked) {
+        btnLGPD.disabled = false;
+        btnLGPD.classList.remove("desabilitado");
+    } else {
+        btnLGPD.disabled = true;
+        btnLGPD.classList.toggle("desabilitado");
+    }
+}

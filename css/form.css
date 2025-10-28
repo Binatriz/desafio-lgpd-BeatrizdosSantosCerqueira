@@ -47,8 +47,25 @@ button {
     height: 40px;
     margin-right: 8px;
     float: right;
+    cursor: pointer;
 }
 
 .titulo {
     margin-left: 8px;
+}
+
+.textosLGPD {
+    display: block;
+    width: 300px;
+    margin: 8px;
+    font-size: 13px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.desabilitado, .desabilitado:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: auto;
 }
